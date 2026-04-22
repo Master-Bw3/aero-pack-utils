@@ -1,6 +1,11 @@
 pluginManagement {
     repositories {
         gradlePluginPortal()
+
+        maven {
+            name = "Sinytra"
+            url = "https://maven.sinytra.org/"
+        }
     }
 }
 

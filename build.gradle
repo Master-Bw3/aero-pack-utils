@@ -3,6 +3,7 @@ plugins {
     id 'maven-publish'
     id 'net.neoforged.moddev' version '2.0.141'
     id 'idea'
+    id 'org.sinytra.adapter.userdev' version '1.2.1-SNAPSHOT'
 }
 
 tasks.named('wrapper', Wrapper).configure {
@@ -50,6 +51,14 @@ repositories {
         url "https://maven.su5ed.dev/releases"
     }
     maven { url = "https://maven.bawnorton.com/releases" }
+
+    maven {
+        url "https://maven.enjarai.dev/releases"
+    }
+
+    maven {
+        url "https://maven.enjarai.dev/mirrors"
+    }
 }
 
 base {
@@ -165,9 +174,16 @@ dependencies {
     implementation "maven.modrinth:flowing-fluids:1.0.5-neoforge-1.21"
     implementation "maven.modrinth:cold-sweat:Hx2FM8dR"
     implementation "maven.modrinth:aether:1.21.1-1.5.10-neoforge"
+    implementation "maven.modrinth:inventory-tweaks-refoxed:1.21.1-1.2.0"
+
+    implementation("dev.enjarai:trickster:2.0.0-beta.35") { transitive = false }
+    implementation("io.wispforest:lavender:0.1.15+1.21") { transitive = false }
+    implementation("nl.enjarai:cicada-lib:0.14.3+1.21-1.21.1") { transitive = false }
+
+    additionalRuntimeClasspath "org.sinytra:connector:2.0.0-beta.12+1.21.1"
+    runtimeOnly "org.sinytra.forgified-fabric-api:forgified-fabric-api:0.116.7+2.2.4+1.21.1"
 
     implementation "io.wispforest:accessories-neoforge:1.1.0-beta.49+1.21.1"
-    implementation("org.sinytra.forgified-fabric-api:fabric-api-base:0.4.42+d1308dedd1"){ exclude group: "fabric-api" }
 
     compileOnly(annotationProcessor("com.github.bawnorton.mixinsquared:mixinsquared-common:0.3.7-beta.1"))
     implementation(jarJar("com.github.bawnorton.mixinsquared:mixinsquared-forge:0.3.7-beta.1")) {
