@@ -175,6 +175,8 @@ dependencies {
     implementation "maven.modrinth:cold-sweat:Hx2FM8dR"
     implementation "maven.modrinth:aether:1.21.1-1.5.10-neoforge"
     implementation "maven.modrinth:inventory-tweaks-refoxed:1.21.1-1.2.0"
+    implementation "maven.modrinth:weather-storms-tornadoes:1.21.0-2.8.6"
+    implementation "maven.modrinth:coroutil:1.21.0-1.3.8"
 
     implementation("dev.enjarai:trickster:2.0.0-beta.35") { transitive = false }
     implementation("io.wispforest:lavender:0.1.15+1.21") { transitive = false }
