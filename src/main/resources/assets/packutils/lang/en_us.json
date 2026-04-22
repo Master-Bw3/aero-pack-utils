@@ -1,0 +1,13 @@
+{
+  "itemGroup.packutils": "Example Mod Tab",
+  "block.packutils.example_block": "Example Block",
+  "item.packutils.example_item": "Example Item",
+
+  "packutils.configuration.title": "Pack Utils Configs",
+  "packutils.configuration.section.packutils.common.toml": "Pack Utils Configs",
+  "packutils.configuration.section.packutils.common.toml.title": "Pack Utils Configs",
+  "packutils.configuration.items": "Item List",
+  "packutils.configuration.logDirtBlock": "Log Dirt Block",
+  "packutils.configuration.magicNumberIntroduction": "Magic Number Text",
+  "packutils.configuration.magicNumber": "Magic Number"
+}
