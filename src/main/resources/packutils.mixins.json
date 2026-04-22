@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "mod.master_bw3.packutis.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "minVersion": "0.8",
+  "client": [
+  ],
+  "mixins": [
+    "MixinSkyrootBucketItem",
+    "MixinWaterSkin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
