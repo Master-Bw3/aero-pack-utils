@@ -18,7 +18,7 @@ import traben.flowing_fluids.FFFluidUtils;
 import traben.flowing_fluids.FlowingFluids;
 
 @Mixin(WaterskinItem.class)
-public class MixinWaterSkin {
+public class MixinWaterSkinItem {
 
     @ModifyArg(
             method = "use",
