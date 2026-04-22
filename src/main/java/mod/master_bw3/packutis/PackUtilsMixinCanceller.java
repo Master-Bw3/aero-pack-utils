@@ -9,8 +9,7 @@ public class PackUtilsMixinCanceller implements MixinCanceller {
     @Override
     public boolean shouldCancel(List<String> targetClassNames, String mixinClassName) {
         List<String> blockedMixins = List.of(
-                "traben.flowing_fluids.mixin.mixins.MixinWaterPushing",
-                "dev.obscuria.elixirum.mixin.MixinEntity"
+                "traben.flowing_fluids.mixin.mixins.MixinWaterPushing"
         );
 
         return blockedMixins.contains(mixinClassName);
