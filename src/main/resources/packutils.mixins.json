@@ -7,6 +7,7 @@
     "MixinSpellSlotInventoryScreen"
   ],
   "mixins": [
+    "MixinDensityFunction",
     "MixinLeafColor",
     "MixinSkyrootBucketItem",
     "MixinSortButtonPosition",
